@@ -1,3 +1,18 @@
 .btn {
+  display: inline-block;
+  background: $yellow;
+  border: 5px solid $dark;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $dark;
+  font-weight: 400;
+  padding: 15px 60px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $yellow-light;
+  }
 
 }

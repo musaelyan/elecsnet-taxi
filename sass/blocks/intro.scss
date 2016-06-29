@@ -1,0 +1,17 @@
+.intro {
+  background: $yellow;
+  padding: 65px 275px;
+
+  &__container {
+    border: 15px solid $dark;
+    background: #fff;
+    padding: 40px 100px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    margin: 0;
+  }
+}

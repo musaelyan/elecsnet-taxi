@@ -1,3 +1,33 @@
 .header {
-  
+  background: $dark;
+  border-bottom: 4px solid $yellow;
+  color: #fff;
+  padding: 20px 0;
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__contacts {
+    float: right;
+    padding-top: 22px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    &--phone {
+      margin-left: 50px;
+      padding-left: 38px;
+      min-width: 310px;
+    }
+
+    &--email {
+      padding-left: 48px;
+      min-width: 190px; 
+    }
+
+  }
+
+
 }
