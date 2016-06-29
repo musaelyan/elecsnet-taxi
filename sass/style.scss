@@ -1,0 +1,60 @@
+@import "normalize.scss";
+
+// шрифт
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../fonts/bebasneuebold.eot");
+  src: local("Bebas Neue Bold"),
+       url("../fonts/bebasneuebold.svg") format("svg"),
+       url("../fonts/bebasneuebold.ttf") format("truetype"),
+       url("../fonts/bebasneuebold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// подключение переменных
+@import "variables.scss";
+
+body {
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #595959;
+  text-transform: none;
+  min-width: 320px;
+  @media ($tablet-width) {
+    min-width: 768px;
+  }
+  @media ($desktop-width) {
+    min-width: 1200px;
+  }
+
+}
+
+.wrapper {
+  width: 320px;
+
+  @media ($tablet-width) {
+    width: 100%;
+  }
+
+  @media ($desktop-width) {
+    width: 1200px;
+  }
+}
+
+
+
+// подключение миксинов
+@import "mixins.scss";
+
+// подключение всех стилей
+
+@import "blocks/btn.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";

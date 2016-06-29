@@ -1,0 +1,19 @@
+$green: #409f00;
+$green-dark: #3a8905;
+
+
+// шрифты
+$HelveticaNeueCyr-Thin: "HelveticaNeueCyr Thin", Arial, sans-serif;
+$HelveticaNeueCyr-Light: "HelveticaNeueCyr Light", Arial, sans-serif;
+
+
+// если верстается мобайл first
+$mobile-width-only: "(max-width: 767px)";
+$tablet-width: "min-width: 768px";
+$desktop-width: "min-width: 1200px";
+
+
+// если верстается desktop first
+$mobile-width: "max-width: 767px";
+$tablet-width: "min-width: 768px" and "max-width: 1199px";
+$desktop-width: "min-width: 1200px";
