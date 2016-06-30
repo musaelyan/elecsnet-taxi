@@ -13,5 +13,15 @@
     line-height: 48px;
     font-weight: 400;
     margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    font-weight: 400;
+
+    span {
+      color: #ff0000;
+    }
   }
 }

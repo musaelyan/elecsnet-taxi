@@ -11,20 +11,39 @@
 
   &__contacts {
     float: right;
-    padding-top: 22px;
+    margin-top: 22px;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      transform: translateY(-50%);
+      top: 50%;
+    }
 
     &--phone {
       margin-left: 50px;
       padding-left: 38px;
       min-width: 310px;
+      &:before {
+        width: 27px;
+        height: 40px;
+        background: url("../img/phone.png") no-repeat;
+      }
     }
 
     &--email {
       padding-left: 48px;
-      min-width: 190px; 
+      min-width: 190px;
+      &:before {
+        width: 36px;
+        height: 27px;
+        background: url("../img/email.png") no-repeat;
+      }
     }
 
   }
