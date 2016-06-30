@@ -1,3 +1,49 @@
 .order {
+  background: $grey;
+  text-align: center;
+  padding: 50px 60px;
 
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  &__line {
+    font-size: 0;
+    padding-top: 40px;
+  }
+
+  &__description {
+    padding-top: 20px;
+    a {
+      text-decoration: none;
+      color: $dark;
+      font-weight: 500;
+      &:hover {
+
+      }
+    }
+  }
+
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  padding: 12px 20px;
+  width: 260px;
+  border-radius: 5px;
+  font-size: 17px;
+  color: $dark;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:hover {
+    box-shadow: 0px 2px 5px 5px #cecece;
+  }
+  &:focus {
+    box-shadow: 0px 2px 5px 5px #cecece;
+  }
 }

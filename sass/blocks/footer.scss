@@ -1,3 +1,34 @@
 .footer {
-  
+  background: $dark;
+  padding: 40px 65px;
+  color: $grey;
+
+  &__line {
+    @include clearfix;
+    padding-top: 30px;
+  }
+
+  &__text {
+    float: left;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    display: block;
+    float: right;
+    max-width: 270px;
+    text-align: right;
+    text-decoration: none;
+    color: $yellow;
+    transition: all 0.3s ease;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $dark;
+    &:hover {
+      color: $yellow-light;
+      border-bottom: 1px solid $yellow-light;
+    }
+  }
+
 }
