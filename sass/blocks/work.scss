@@ -1,0 +1,17 @@
+.work {
+  position: relative;
+  padding-top: 300px;
+
+  &__title {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: $dark;
+    padding: 30px 60px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    border-radius: 0 60px 60px 0;
+  }
+
+}

@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 17px;
   font-weight: 300;
-  line-height: 23px;
+  line-height: 25px;
   color: $dark;
   text-transform: none;
   min-width: 1200px;
@@ -45,5 +45,11 @@ body {
 @import "blocks/footer.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
-@import "blocks/menu.scss";
 @import "blocks/intro.scss";
+
+@import "blocks/promo.scss";
+@import "blocks/offer.scss";
+@import "blocks/work.scss";
+@import "blocks/place.scss";
+@import "blocks/partners.scss";
+@import "blocks/order.scss";

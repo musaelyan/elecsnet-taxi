@@ -1,0 +1,45 @@
+.promo {
+  font-size: 0;
+
+  &__text {
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 75px 125px;
+    height: 330px;
+    overflow: hidden;
+
+    &--1 {
+      padding-top: 100px;
+    }
+    span {
+      color: #ff0000;
+    }
+  }
+
+  &__image {
+    background: $dark;
+    box-sizing: border-box;
+    width: 50%;
+    height: 330px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--1 {
+      background-image: url("../img/promo-image1.jpg");
+    }
+    &--2 {
+      background-image: url("../img/promo-image2.jpg");
+    }
+    &--3 {
+      background-image: url("../img/promo-image3.jpg");
+    }
+  }
+
+}

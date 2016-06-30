@@ -12,12 +12,14 @@
   &__contacts {
     float: right;
     margin-top: 22px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
     position: relative;
     &:before {
       content: "";
+      background-image: url("../img/spritesheet.png");
+      background-repeat: no-repeat;
       display: block;
       position: absolute;
       left: 0;
@@ -32,7 +34,7 @@
       &:before {
         width: 27px;
         height: 40px;
-        background: url("../img/phone.png") no-repeat;
+        background-position: -390px -200px;
       }
     }
 
@@ -42,7 +44,7 @@
       &:before {
         width: 36px;
         height: 27px;
-        background: url("../img/email.png") no-repeat;
+        background-position: -127px -10px;
       }
     }
 

@@ -11,6 +11,10 @@
   padding: 15px 60px;
   transition: all 0.3s ease;
 
+  &--promo {
+    padding: 15px 40px;
+  }
+
   &:hover {
     background: $yellow-light;
   }
