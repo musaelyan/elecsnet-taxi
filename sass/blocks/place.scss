@@ -1,3 +1,32 @@
 .place {
+  width: 1170px;
+  height: 487px;
+  background: #fff;
+  position: relative;
 
+  &__image {
+    width: 1170px;
+    height: 487px;
+    position: absolute;
+    background: url("../img/city.png") no-repeat;
+    left: 0;
+    top: 0;
+  }
+
+  &__description {
+    margin: 0;
+    background: $yellow;
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    margin: 0 140px;
+    padding: 15px 30px;
+    line-height: 37px;
+    top: 250px;
+    left: -60px;
+
+    span {
+      font-weight: 500;
+    }
+  }
 }

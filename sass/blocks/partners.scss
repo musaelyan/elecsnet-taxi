@@ -1,3 +1,55 @@
 .partners {
 
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 70px;
+
+    span {
+      font-weight: 500;
+      color: $yellow;
+    }
+  }
+
+  &__row {
+    font-size: 0;
+    text-align: center;
+  }
+
+  &__partner {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 150px;
+    margin-bottom: 70px;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      display: block;
+    }
+  }
+
+  &__promo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+
+    &:after {
+      content: "";
+      background-image: url("../img/spritesheet.png");
+      background-repeat: no-repeat;
+      display: block;
+      width: 97px;
+      height: 68px;
+      background-position: -10px -10px;
+      margin: 0 auto;
+      margin-top: 45px;
+    }
+  }
+
+
+
 }

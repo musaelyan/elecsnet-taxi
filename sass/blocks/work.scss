@@ -1,6 +1,6 @@
 .work {
   position: relative;
-  padding-top: 300px;
+  padding-top: 280px;
 
   &__title {
     position: absolute;
@@ -14,4 +14,27 @@
     border-radius: 0 60px 60px 0;
   }
 
+  &__image {
+    margin: 0 auto;
+    padding: 0 126px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 150px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    width: 280px;
+    position: absolute;
+
+    &--1 {
+      left: 126px;
+    }
+    &--2 {
+      right: 126px;
+    }
+  }
 }
