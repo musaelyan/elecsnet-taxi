@@ -1,7 +1,23 @@
 .footer {
   background: $dark;
   padding: 40px 65px;
+  padding-top: 30px;
   color: $grey;
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    content: "";
+    width: 200%;
+    height: 150px;
+    background: $dark;
+    display: block;
+    position: absolute;
+    left: -50%;
+    z-index: -1;
+    top: -40px;
+    transform: rotate(-4deg);
+  }
 
   &__line {
     @include clearfix;

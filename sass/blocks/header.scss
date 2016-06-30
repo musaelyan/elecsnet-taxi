@@ -7,6 +7,13 @@
   &__link {
     color: #fff;
     text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $dark;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $yellow-light;
+      border-bottom: 1px solid $yellow-light;
+    }
   }
 
   &__contacts {
@@ -16,6 +23,7 @@
     font-size: 18px;
     line-height: 24px;
     position: relative;
+    text-align: right;
     &:before {
       content: "";
       background-image: url("../img/spritesheet.png");
@@ -30,7 +38,7 @@
     &--phone {
       margin-left: 50px;
       padding-left: 38px;
-      min-width: 310px;
+      min-width: 100px;
       &:before {
         width: 27px;
         height: 40px;
@@ -40,7 +48,7 @@
 
     &--email {
       padding-left: 48px;
-      min-width: 190px;
+      min-width: 100px;
       &:before {
         width: 36px;
         height: 27px;

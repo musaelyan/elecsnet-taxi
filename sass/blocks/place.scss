@@ -15,18 +15,27 @@
 
   &__description {
     margin: 0;
-    background: $yellow;
     font-size: 30px;
     z-index: 1;
     position: relative;
     margin: 0 140px;
-    padding: 15px 30px;
     line-height: 37px;
     top: 250px;
     left: -60px;
+    position: relative;
 
     span {
       font-weight: 500;
     }
+  }
+
+  &__bg {
+    transform: rotate(-2deg);
+    background: $yellow;
+    width: 920px;
+    height: 140px;
+    position: absolute;
+    left: 40px;
+    top: 225px;
   }
 }

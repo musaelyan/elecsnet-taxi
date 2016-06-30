@@ -1,7 +1,22 @@
 .order {
   background: $grey;
   text-align: center;
-  padding: 50px 60px;
+  padding: 30px 60px 90px;
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    content: "";
+    width: 200%;
+    height: 150px;
+    background: $grey;
+    display: block;
+    position: absolute;
+    left: -50%;
+    z-index: -1;
+    top: -40px;
+    transform: rotate(-4deg);
+  }
 
   &__title {
     font-size: 30px;
