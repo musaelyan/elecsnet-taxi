@@ -1,6 +1,5 @@
-build/
 node_modules/
-source/ 
+source/
 .DS_Store
 Thumbs.db
 .idea
@@ -8,4 +7,5 @@ Thumbs.db
 *.log
 *.psd
 *.ai
+*.php
 css/*.css

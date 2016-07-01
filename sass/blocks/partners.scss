@@ -37,20 +37,13 @@
     font-size: 25px;
     font-weight: 400;
     margin-top: 70px;
-
-    &:after {
-      content: "";
-      background-image: url("../img/spritesheet.png");
-      background-repeat: no-repeat;
-      display: block;
-      width: 97px;
-      height: 68px;
-      background-position: -10px -10px;
-      margin: 0 auto;
-      margin-top: 45px;
-    }
   }
 
-
-
+  &__arrow {
+    display: block;
+    width: 97px;
+    height: 68px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }

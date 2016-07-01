@@ -1,6 +1,11 @@
 @import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
+// подключение попапов
+@import "popup.scss";
+
+// подключение анимации
+@import "animate.min.scss";
 
 
 body {
@@ -29,6 +34,7 @@ body {
   background-repeat: repeat;
   width: 100%;
   padding: 100px 0;
+  background-attachment: fixed;
 }
 
 .wrapper {

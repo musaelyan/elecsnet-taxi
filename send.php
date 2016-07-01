@@ -33,10 +33,10 @@ $subject='Сотрудничество с Элекснет - промо стра
 
 
 
-$to = "PetrovaAA@elecsnet.ru";
+$to = "dokk@elecsnet.ru";
 
-$message = "Вам оставлена заявка со следующей информацией"."\n<br>Имя: ".$name." мм"."\n<br>Название компании: ".$company." мм"."\n<br>Телефон: ".$phone;
-$headers = 'From: hello@dubki.pro' . "\r\n" . 'Reply-To: ' . $formEmail .  "\r\n" .'X-Mailer: Adobe Muse 7.3.5 with PHP/' . phpversion() . "\r\n" . 'Content-type: text/html; charset=utf-8' . "\r\n";
+$message = "Вам оставлена заявка со следующей информацией"."\n<br>Имя: ".$name."\n<br>Название компании: ".$company."\n<br>Телефон: ".$phone;
+$headers = 'From: hello@elecsnet.ru' . "\r\n" . 'Reply-To: ' . $formEmail .  "\r\n" .'X-Mailer: Adobe Muse 7.3.5 with PHP/' . phpversion() . "\r\n" . 'Content-type: text/html; charset=utf-8' . "\r\n";
 
 	$sent = @mail($to, $subject, $message, $headers);
 
