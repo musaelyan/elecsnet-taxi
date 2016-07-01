@@ -19,4 +19,8 @@
     background: $yellow-light;
   }
 
+  &:active {
+    background: $yellow-dark;
+  }
+
 }

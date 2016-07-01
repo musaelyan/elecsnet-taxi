@@ -24,4 +24,17 @@
       color: #ff0000;
     }
   }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $dark;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid $dark;
+    margin-top: 15px;
+    &:hover {
+      color: $yellow-dark;
+      border-bottom: 1px solid $yellow-dark;
+    }    
+  }
 }
