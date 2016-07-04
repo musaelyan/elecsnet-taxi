@@ -23,7 +23,7 @@ body {
     min-width: 768px;
   }
   @media ($mobile-width) {
-    min-width: 320px;
+    min-width: 320px !important;
   }
 }
 
@@ -37,8 +37,8 @@ body {
     padding: 0 15px;
   }
   @media ($mobile-width) {
-    width: 300px;
-    padding: 0 10px;
+    width: 300px !important;;
+    padding: 0 10px !important;;
   }
 }
 
@@ -64,7 +64,7 @@ body {
     width: 768px;
   }
   @media ($mobile-width) {
-    width: 320px;
+    width: 320px !important;
   }
 }
 
