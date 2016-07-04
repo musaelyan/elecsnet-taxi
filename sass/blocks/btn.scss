@@ -10,11 +10,18 @@
   font-weight: 400;
   padding: 15px 60px;
   transition: all 0.3s ease;
+  @media ($mobile-width) {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
 
   &--promo {
     padding: 15px 40px;
     @media ($tablet-width) {
       padding: 15px 30px;
+    }
+    @media ($mobile-width) {
+      padding: 10px;
     }
   }
 

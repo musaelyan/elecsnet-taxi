@@ -1,11 +1,7 @@
 @import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
-// подключение попапов
-@import "popup.scss";
 
-// подключение анимации
-@import "animate.min.scss";
 
 
 body {
@@ -67,6 +63,12 @@ body {
     width: 320px;
   }
 }
+
+// подключение анимации
+@import "animate.min.scss";
+
+// подключение попапов
+@import "popup.scss";
 
 // подключение всех стилей
 

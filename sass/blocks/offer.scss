@@ -4,6 +4,9 @@
   @media ($tablet-width) {
     padding-top: 230px;
   }
+  @media ($mobile-width) {
+    padding-top: 180px;
+  }
 
 
   &__title {
@@ -16,6 +19,11 @@
     font-weight: 400;
     font-size: 30px;
     border-radius: 60px 0 0 60px;
+    @media ($mobile-width) {
+      padding: 30px 25px;
+      font-size: 25px;
+      top: 50px;
+    }
   }
 
   &__list {
@@ -40,6 +48,17 @@
         margin-right: 0;
       }
     }
+    @media ($mobile-width) {
+      display: block;
+      margin: 0 auto;
+      padding-top: 50px;
+      &:last-child {
+        margin: 0 auto;
+      }
+      &:nth-child(2) {
+        margin: 0 auto;
+      }
+    }
 
     &:before {
       content: "";
@@ -50,6 +69,9 @@
       margin-bottom: 30px;
       background-image: url("../img/spritesheet.png");
       background-repeat: no-repeat;
+      @media ($mobile-width) {
+        margin-bottom: 10px;
+      }
     }
     &--1:before {
       width: 170px;

@@ -31,6 +31,7 @@
     @media ($mobile-width) {
       float: none;
       text-align: left;
+      font-size: 16px;
     }
     &:before {
       content: "";
@@ -54,7 +55,8 @@
       }
       @media ($mobile-width) {
         margin-left: 0px;
-        width: 180px;
+        width: 150px;
+        padding-left: 48px;
       }
     }
 

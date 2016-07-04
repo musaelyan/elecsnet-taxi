@@ -4,6 +4,9 @@
   @media ($tablet-width) {
     padding: 65px 100px;
   }
+  @media ($mobile-width) {
+    padding: 20px;
+  }
 
   &__container {
     border: 15px solid $dark;
@@ -11,6 +14,10 @@
     padding: 40px 100px;
     @media ($tablet-width) {
       padding: 40px 80px;
+    }
+    @media ($mobile-width) {
+      padding: 20px;
+      border: 10px solid $dark;
     }
   }
 
@@ -20,6 +27,10 @@
     font-weight: 400;
     margin: 0;
     margin-bottom: 20px;
+    @media ($mobile-width) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   &__description {

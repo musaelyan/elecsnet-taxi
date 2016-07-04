@@ -13,6 +13,13 @@
     @media ($tablet-width) {
       padding: 75px 35px;
     }
+    @media ($mobile-width) {
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid $dark;
+      padding: 20px 40px;
+      height: auto;
+    }
 
     &--1 {
       padding-top: 100px;
@@ -36,12 +43,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media ($mobile-width) {
+      display: block;
+      width: 100%;
+    }
 
     &--1 {
       background-image: url("../img/promo-image1.jpg");
     }
     &--2 {
       background-image: url("../img/promo-image2.jpg");
+      @media ($mobile-width) {
+        display: none;
+      }
     }
     &--3 {
       background-image: url("../img/promo-image3.jpg");

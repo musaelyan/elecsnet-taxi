@@ -354,87 +354,41 @@ td,
 th {
   padding: 0; }
 
-.overlay {
-  background-color: black;
-  /* Цвет фона */
-  opacity: 0;
-  /* Изначально непрозрачный */
-  position: fixed;
-  /* Фиксированное позиционирование */
-  z-index: 9980;
-  right: 0;
-  /* Справа 0 */
-  top: 0;
-  /* Сверху 0 */
-  left: 0;
-  /* Слева 0 */
-  bottom: 0;
-  /* Снизу 0 */
-  visibility: hidden;
-  /* Изначально невидимый */
-  /* transition старт */
-  transition: 0.5s ease; }
-
-.overlay:target {
-  visibility: visible;
-  /* Делает видимым */
-  opacity: 0.8;
-  /* Фон становится полностью прозрачным */ }
-
-.popup {
-  position: fixed;
-  /* Фиксированное расположение */
-  visibility: hidden;
-  /* Изначально - спрятан */
-  z-index: 9999;
-  /* z-index */
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  left: 50%;
-  top: 150px;
-  width: 400px;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 40px 20px;
-  background-color: #fff;
-  /* Фон */
-  color: #1d1d1b;
-  /* Цвет */
+body {
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 17px;
   font-weight: 300;
-  border: 5px solid #ffba21; }
+  line-height: 25px;
+  color: #1d1d1b;
+  text-transform: none;
+  min-width: 1200px; }
 
-.overlay:target + .popup {
-  opacity: 1;
-  /* Убирает прозрачность */
-  visibility: visible;
-  /* Делает видимым */ }
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
-.popup-close {
-  display: block;
-  width: 3px;
-  height: 20px;
-  background: #efa503;
-  position: absolute;
-  top: 7px;
-  right: 15px;
-  font-size: 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+.main-content {
+  background-color: #f8f8f8;
+  background-image: url("../img/zigzag.jpg");
+  background-repeat: repeat;
+  width: 100%;
+  padding: 100px 0;
+  background-attachment: fixed; }
 
-.popup-close:after {
-  content: "";
-  display: block;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  width: 3px;
-  height: 20px;
-  background: #efa503;
-  position: absolute;
-  top: 0; }
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 5px 10px 3px #d8d8d8;
+  overflow: hidden; }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -2826,41 +2780,87 @@ th {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-body {
-  background: white;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Roboto", Arial, sans-serif;
+.overlay {
+  background-color: black;
+  /* Цвет фона */
+  opacity: 0;
+  /* Изначально непрозрачный */
+  position: fixed;
+  /* Фиксированное позиционирование */
+  z-index: 9980;
+  right: 0;
+  /* Справа 0 */
+  top: 0;
+  /* Сверху 0 */
+  left: 0;
+  /* Слева 0 */
+  bottom: 0;
+  /* Снизу 0 */
+  visibility: hidden;
+  /* Изначально невидимый */
+  /* transition старт */
+  transition: 0.5s ease; }
+
+.overlay:target {
+  visibility: visible;
+  /* Делает видимым */
+  opacity: 0.8;
+  /* Фон становится полностью прозрачным */ }
+
+.popup {
+  position: fixed;
+  /* Фиксированное расположение */
+  visibility: hidden;
+  /* Изначально - спрятан */
+  z-index: 9999;
+  /* z-index */
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 150px;
+  width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  background-color: #fff;
+  /* Фон */
+  color: #1d1d1b;
+  /* Цвет */
   font-size: 17px;
   font-weight: 300;
-  line-height: 25px;
-  color: #1d1d1b;
-  text-transform: none;
-  min-width: 1200px; }
+  border: 5px solid #ffba21; }
 
-.container {
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto; }
-  .container:after {
-    content: "";
-    display: table;
-    clear: both; }
+.overlay:target + .popup {
+  opacity: 1;
+  /* Убирает прозрачность */
+  visibility: visible;
+  /* Делает видимым */ }
 
-.main-content {
-  background-color: #f8f8f8;
-  background-image: url("../img/zigzag.jpg");
-  background-repeat: repeat;
-  width: 100%;
-  padding: 100px 0;
-  background-attachment: fixed; }
+.popup-close {
+  display: block;
+  width: 3px;
+  height: 20px;
+  background: #efa503;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  font-size: 0px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
-.wrapper {
-  width: 1170px;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0px 5px 10px 3px #d8d8d8;
-  overflow: hidden; }
+.popup-close:after {
+  content: "";
+  display: block;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 3px;
+  height: 20px;
+  background: #efa503;
+  position: absolute;
+  top: 0; }
 
 .btn {
   display: inline-block;
@@ -3194,7 +3194,8 @@ body {
     .partners__partner:last-child {
       margin-right: 0; }
     .partners__partner img {
-      display: block; }
+      display: block;
+      margin: 0 auto; }
   .partners__promo {
     text-align: center;
     font-size: 25px;
@@ -3276,26 +3277,6 @@ input[type="text"] {
   .fadeInUp{
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp; } }
-  @media (max-width: 767px){
-  .popup{
-    width: 300px;
-    padding: 30px;
-    top: 50px; }
-  body{
-    min-width: 320px; }
-  .container{
-    width: 300px;
-    padding: 0 10px; }
-  .wrapper{
-    width: 320px; }
-  .header__contacts{
-    float: none;
-    text-align: left; }
-  .header__contacts--phone{
-    margin-left: 0px;
-    width: 180px; }
-  .logo{
-    float: none; } }
   @media (max-width: 1199px){
   body{
     min-width: 768px; }
@@ -3344,7 +3325,6 @@ input[type="text"] {
   .work__text--2{
     right: 0; }
   .place{
-    background: url("../img/city-768.png") no-repeat;
     width: 768px;
     height: 354px; }
   .place__image{
@@ -3369,3 +3349,127 @@ input[type="text"] {
   input[type="text"]{
     width: 180px;
     margin-right: 20px; } }
+  @media (max-width: 767px){
+  body{
+    min-width: 320px; }
+  .container{
+    width: 300px;
+    padding: 0 10px; }
+  .wrapper{
+    width: 320px; }
+  .popup{
+    width: 300px;
+    padding: 30px;
+    top: 50px; }
+  .btn{
+    font-size: 18px;
+    padding: 10px 20px; }
+  .btn--promo{
+    padding: 10px; }
+  .footer{
+    padding: 40px 20px; }
+  .footer__text{
+    float: none;
+    width: 280px;
+    text-align: center;
+    margin-top: 20px; }
+  .footer__link{
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+    min-width: 100px; }
+  .header__contacts{
+    float: none;
+    text-align: left;
+    font-size: 16px; }
+  .header__contacts--phone{
+    margin-left: 0px;
+    width: 150px;
+    padding-left: 48px; }
+  .logo{
+    float: none; }
+  .intro{
+    padding: 20px; }
+  .intro__container{
+    padding: 20px;
+    border: 10px solid #1d1d1b; }
+  .intro__title{
+    font-size: 30px;
+    line-height: 40px; }
+  .promo__text{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #1d1d1b;
+    padding: 20px 40px;
+    height: auto; }
+  .promo__image{
+    display: block;
+    width: 100%; }
+  .promo__image--2{
+    display: none; }
+  .offer{
+    padding-top: 180px; }
+  .offer__title{
+    padding: 30px 25px;
+    font-size: 25px;
+    top: 50px; }
+  .offer__item{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px; }
+  .offer__item:last-child{
+    margin: 0 auto; }
+  .offer__item:nth-child(2){
+    margin: 0 auto; }
+  .offer__item:before{
+    margin-bottom: 10px; }
+  .work{
+    padding-top: 240px;
+    padding-bottom: 0px; }
+  .work__title{
+    padding: 30px 25px;
+    font-size: 25px;
+    top: 50px; }
+  .work__description{
+    width: 278px;
+    height: 605px;
+    padding: 0 20px;
+    padding-bottom: 150px; }
+  .work__image{
+    background: url("../img/work-image-320.png") no-repeat;
+    width: 278px;
+    height: 605px; }
+  .work__text--1{
+    top: 190px; }
+  .work__text--2{
+    right: 20px; }
+  .place{
+    width: 320px;
+    height: 331px; }
+  .place__image{
+    background: url("../img/city-320.png") no-repeat;
+    width: 320px;
+    height: 331px; }
+  .place__description{
+    font-size: 18px;
+    line-height: 25px;
+    left: 0;
+    margin: 0 20px; }
+  .place__bg{
+    width: 300px;
+    left: 10px;
+    top: 170px; }
+  .partners__title{
+    font-size: 25px;
+    line-height: 33px;
+    width: 300px;
+    margin: 50px auto 50px; }
+  .partners__partner{
+    display: block;
+    margin: 50px auto; }
+  .order__description{
+    width: 280px; }
+  input[type="text"]{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px; } }

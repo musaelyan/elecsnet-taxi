@@ -8,6 +8,9 @@
   @media ($tablet-width) {
     padding: 40px 30px;
   }
+  @media ($mobile-width) {
+    padding: 40px 20px;
+  }
 
   &:before {
     content: "";
@@ -37,6 +40,12 @@
         width: 320px;
       }
     }
+    @media ($mobile-width) {
+      float: none;
+      width: 280px;
+      text-align: center;
+      margin-top: 20px;
+    }
   }
 
   &__link {
@@ -56,6 +65,12 @@
     &:active {
       color:  $yellow-dark;
       border-bottom: 1px solid $yellow-dark;
+    }
+    @media ($mobile-width) {
+      float: none;
+      text-align: center;
+      margin-top: 20px;
+      min-width: 100px;
     }
   }
 

@@ -7,6 +7,12 @@
     text-align: center;
     margin: 0;
     margin: 100px 0 130px;
+    @media ($mobile-width) {
+      font-size: 25px;
+      line-height: 33px;
+      width: 300px;
+      margin: 50px auto 50px;
+    }
 
     span {
       font-weight: 500;
@@ -29,10 +35,15 @@
     }
     img {
       display: block;
+      margin: 0 auto;
     }
     @media ($tablet-width) {
       margin-right: 50px;
       margin-bottom: 50px;
+    }
+    @media ($mobile-width) {
+      display: block;
+      margin: 50px auto;
     }
   }
 
