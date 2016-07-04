@@ -19,6 +19,12 @@ body {
   color: $dark;
   text-transform: none;
   min-width: 1200px;
+  @media ($tablet-width) {
+    min-width: 768px;
+  }
+  @media ($mobile-width) {
+    min-width: 320px;
+  }
 }
 
 .container {
@@ -26,6 +32,14 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   @include clearfix;
+  @media ($tablet-width) {
+    width: 738px;
+    padding: 0 15px;
+  }
+  @media ($mobile-width) {
+    width: 300px;
+    padding: 0 10px;
+  }
 }
 
 .main-content {
@@ -35,6 +49,9 @@ body {
   width: 100%;
   padding: 100px 0;
   background-attachment: fixed;
+  @media ($tablet-width) {
+    padding: 0;
+  }
 }
 
 .wrapper {
@@ -43,6 +60,12 @@ body {
   background: #fff;
   box-shadow: 0px 5px 10px 3px #d8d8d8;
   overflow: hidden;
+  @media ($tablet-width) {
+    width: 768px;
+  }
+  @media ($mobile-width) {
+    width: 320px;
+  }
 }
 
 // подключение всех стилей

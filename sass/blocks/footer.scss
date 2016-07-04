@@ -5,6 +5,9 @@
   color: $grey;
   position: relative;
   z-index: 2;
+  @media ($tablet-width) {
+    padding: 40px 30px;
+  }
 
   &:before {
     content: "";
@@ -29,6 +32,11 @@
     width: 500px;
     padding: 0;
     margin: 0;
+    &--1 {
+      @media ($tablet-width) {
+        width: 320px;
+      }
+    }
   }
 
   &__link {

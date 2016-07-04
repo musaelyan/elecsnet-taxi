@@ -3143,7 +3143,7 @@ body {
   background: #fff;
   position: relative; }
   .place__image {
-    width: 1170px;
+    width: 1135px;
     height: 487px;
     position: absolute;
     background: url("../img/city.png") no-repeat;
@@ -3276,3 +3276,96 @@ input[type="text"] {
   .fadeInUp{
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp; } }
+  @media (max-width: 767px){
+  .popup{
+    width: 300px;
+    padding: 30px;
+    top: 50px; }
+  body{
+    min-width: 320px; }
+  .container{
+    width: 300px;
+    padding: 0 10px; }
+  .wrapper{
+    width: 320px; }
+  .header__contacts{
+    float: none;
+    text-align: left; }
+  .header__contacts--phone{
+    margin-left: 0px;
+    width: 180px; }
+  .logo{
+    float: none; } }
+  @media (max-width: 1199px){
+  body{
+    min-width: 768px; }
+  .container{
+    width: 738px;
+    padding: 0 15px; }
+  .main-content{
+    padding: 0; }
+  .wrapper{
+    width: 768px; }
+  .btn--promo{
+    padding: 15px 30px; }
+  .footer{
+    padding: 40px 30px; }
+  .footer__text--1{
+    width: 320px; }
+  .intro{
+    padding: 65px 100px; }
+  .intro__container{
+    padding: 40px 80px; }
+  .promo__text{
+    padding: 75px 35px; }
+  .promo__text--1{
+    padding-top: 100px; }
+  .offer{
+    padding-top: 230px; }
+  .offer__item{
+    margin-right: 60px;
+    margin-top: 60px; }
+  .offer__item:nth-child(2){
+    margin-right: 0; }
+  .work{
+    padding-top: 230px;
+    padding-bottom: 15px; }
+  .work__description{
+    width: 572px;
+    height: 388px;
+    padding: 0 60px;
+    padding-bottom: 150px; }
+  .work__image{
+    background: url("../img/work-image-768.png") no-repeat;
+    width: 572px;
+    height: 388px; }
+  .work__text--1{
+    left: 0; }
+  .work__text--2{
+    right: 0; }
+  .place{
+    background: url("../img/city-768.png") no-repeat;
+    width: 768px;
+    height: 354px; }
+  .place__image{
+    background: url("../img/city-768.png") no-repeat;
+    width: 754px;
+    height: 354px; }
+  .place__description{
+    margin: 0 80px;
+    left: -20px;
+    top: 180px; }
+  .place__bg{
+    width: 680px;
+    top: 165px; }
+  .partners__partner{
+    margin-right: 50px;
+    margin-bottom: 50px; }
+  .order{
+    padding: 30px 20px 90px; }
+  .order__description{
+    width: 540px;
+    margin: 0 auto; }
+  input[type="text"]{
+    width: 180px;
+    margin-right: 20px; } }

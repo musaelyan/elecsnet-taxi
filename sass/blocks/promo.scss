@@ -10,9 +10,15 @@
     padding: 75px 125px;
     height: 330px;
     overflow: hidden;
+    @media ($tablet-width) {
+      padding: 75px 35px;
+    }
 
     &--1 {
       padding-top: 100px;
+      @media ($tablet-width) {
+        padding-top: 100px;
+      }
     }
     span {
       color: #ff0000;

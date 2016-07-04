@@ -1,6 +1,9 @@
 .offer {
   position: relative;
   padding-top: 280px;
+  @media ($tablet-width) {
+    padding-top: 230px;
+  }
 
 
   &__title {
@@ -29,6 +32,13 @@
     margin-right: 20px;
     &:last-child {
       margin-right: 0;
+    }
+    @media ($tablet-width) {
+      margin-right: 60px;
+      margin-top: 60px;
+      &:nth-child(2) {
+        margin-right: 0;
+      }
     }
 
     &:before {

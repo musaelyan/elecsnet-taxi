@@ -2,6 +2,10 @@
   position: relative;
   padding-top: 280px;
   padding-bottom: 50px;
+  @media ($tablet-width) {
+    padding-top: 230px;
+    padding-bottom: 15px;
+  }
 
   &__title {
     position: absolute;
@@ -23,12 +27,23 @@
     padding-bottom: 150px;
     width: 798px;
     height: 287px;
+    @media ($tablet-width) {
+      width: 572px;
+      height: 388px;
+      padding: 0 60px;
+      padding-bottom: 150px;
+    }
   }
 
   &__image {
     background: url("../img/work-image.png") no-repeat;
     width: 798px;
     height: 287px;
+    @media ($tablet-width) {
+      background: url("../img/work-image-768.png") no-repeat;
+      width: 572px;
+      height: 388px;
+    }
   }
 
   &__text {
@@ -37,9 +52,15 @@
 
     &--1 {
       left: 63px;
+      @media ($tablet-width) {
+        left: 0;
+      }
     }
     &--2 {
       right: 63px;
+      @media ($tablet-width) {
+        right: 0;
+      }
     }
   }
 }

@@ -4,13 +4,8 @@ $yellow-light: #ffcf65;
 $grey: #dadada;
 $yellow-dark: #efa503;
 
-// если верстается мобайл first
-$mobile-width-only: "(max-width: 767px)";
-$tablet-width: "min-width: 768px";
-$desktop-width: "min-width: 1200px";
-
 
 // если верстается desktop first
-$mobile-width: "max-width: 767px";
-$tablet-width: "min-width: 768px" and "max-width: 1199px";
 $desktop-width: "min-width: 1200px";
+$tablet-width: "min-width: 768px" and "max-width: 1199px";
+$mobile-width: "max-width: 767px";

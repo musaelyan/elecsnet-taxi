@@ -13,6 +13,9 @@
 
   &--promo {
     padding: 15px 40px;
+    @media ($tablet-width) {
+      padding: 15px 30px;
+    }
   }
 
   &:hover {

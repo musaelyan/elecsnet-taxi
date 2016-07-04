@@ -35,7 +35,12 @@
     color: $dark; /* Цвет */
     font-size: 17px;
     font-weight: 300;
-    border: 5px solid $yellow;    
+    border: 5px solid $yellow;
+    @media ($mobile-width) {
+      width: 300px;
+      padding: 30px;
+      top: 50px;
+    }
 }
 
 .overlay:target+.popup {

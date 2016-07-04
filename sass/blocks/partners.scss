@@ -30,6 +30,10 @@
     img {
       display: block;
     }
+    @media ($tablet-width) {
+      margin-right: 50px;
+      margin-bottom: 50px;
+    }
   }
 
   &__promo {
